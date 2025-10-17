@@ -15,9 +15,9 @@ CLASS zcl_lab_01_ejec1_sar IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-    DATA(lo_company) = NEW zcl_04_company_sar( iv_quotation = 'Q1' ).
-    DATA(lo_plant) = NEW zcl_05_plant_sar( iv_quotation = 'Q2' iv_products = 'P2' ).  " Tenemos 3 ref con 3 instancias q apuntan en la memoria a la instancia corresp con cada ref
-    DATA(lo_storage_location) = NEW zcl_06_storage_sar( iv_quotation = 'Q3' iv_products = 'P3' ).
+    DATA(lo_company) = NEW zcl_04_company_sar(  ).
+    DATA(lo_plant) = NEW zcl_05_plant_sar( ).  " Tenemos 3 ref con 3 instancias q apuntan en la memoria a la instancia corresp con cada ref
+    DATA(lo_storage_location) = NEW zcl_06_storage_sar( ).
 
     lo_company->set_company_code( '1234' ).
     lo_company->set_currency( 'USD' ).
